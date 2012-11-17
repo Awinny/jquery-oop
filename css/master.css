@@ -1,0 +1,51 @@
+/* Reset style */
+@import url("reset.css");
+
+/* General settings */
+body { font-family: Courier }
+a { text-decoration: none }
+p { padding: 5px 0; }
+h1 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+input,
+label {
+    float: left;
+    margin-bottom: 5px;
+}
+label { clear: left; }
+
+/* Header */
+div.header { margin-bottom: 10px }
+
+/* Navigation */
+#navigation { overflow: hidden }
+    #navigation li {
+        float: left;
+        margin-left: 10px;
+    }
+    #navigation li:first-child { margin: 0 }
+        #navigation li a {
+            display: block; 
+            padding: 5px;
+        }
+        #navigation li.active a {
+            background-color: #000;
+            color: #fff;
+        }
+
+/* Page */
+.content { overflow: hidden }
+    .content form fieldset {
+        float: left;
+        clear: left;
+        margin: 5px 0;
+    }
+        .content form label { min-width: 100px }
+
+/* Footer */
