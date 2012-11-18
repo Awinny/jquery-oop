@@ -1,12 +1,12 @@
 var actions = function() {
     this.click = function() {
-        this.element = $("a");
-        this.action  = function() { };
-        this.get     = function() {
+        this.trigger = $("a");
+        this.action  = function( trigger ) { };
+        this.set     = function() {
             var self = this;
-            self.element.click(function( e ) {
+            self.trigger.click(function( e ) {
                 e.preventDefault();
-                self.action();
+                self.action( $(this) );
             });
         };
     };

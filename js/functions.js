@@ -7,9 +7,9 @@ var functions = function() {
         }
     }
     this.load = function() {
-        this.execute = function( trigger, target ) {
-            return function() {
-                target.load(trigger.attr("href"));
+        this.execute = function( target ) {
+            return function( trigger ) {
+                target.load( trigger.attr("href") );
             }
         }
     }
