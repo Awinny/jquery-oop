@@ -13,4 +13,12 @@ var functions = function() {
             }
         }
     }
+    this.active = function() {
+        this.execute = function() {
+            return function( trigger ) {
+                trigger.parent().siblings().removeClass("active");
+                trigger.parent().addClass("active");
+            }
+        }
+    }
 }

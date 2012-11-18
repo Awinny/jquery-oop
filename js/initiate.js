@@ -8,3 +8,4 @@ var click = new newActions.click;
 // Initiate functions
 var fade = new newFunction.fade;
 var load = new newFunction.load;
+var active = new newFunction.active;

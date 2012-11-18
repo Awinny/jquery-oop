@@ -4,7 +4,10 @@ var header = function() {
 
     $("a", header).each(function() {
         click.trigger = $(this);
-        click.action  = load.execute( content );
-        click.set();
+        click.action  = Array(
+            load.execute( content ),
+            active.execute()
+        );
+        click.get();
     })
 }
