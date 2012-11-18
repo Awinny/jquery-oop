@@ -7,7 +7,7 @@ a { text-decoration: none }
 p { padding: 5px 0; }
 h1 {
     font-size: 25px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 h2 {
     font-size: 20px;
@@ -37,15 +37,22 @@ div.header { margin-bottom: 10px }
         #navigation li.active a {
             background-color: #000;
             color: #fff;
+            border-radius: 3px;
         }
 
 /* Page */
-.content { overflow: hidden }
-    .content form fieldset {
-        float: left;
-        clear: left;
-        margin: 5px 0;
+.container {
+    margin: 10px;
+}
+    .content {
+        overflow: hidden;
+        min-height: 250px;
     }
-        .content form label { min-width: 100px }
+        .content form fieldset {
+            float: left;
+            clear: left;
+            margin: 5px 0;
+        }
+            .content form label { min-width: 100px }
 
 /* Footer */

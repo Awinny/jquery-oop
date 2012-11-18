@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title><?= $pagename ?></title>
-    <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8" />
     <script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/actions.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/functions.js"></script>
@@ -13,8 +13,9 @@
     <script type="text/javascript" charset="utf-8" src="js/init.js"></script>
 </head>
 <body>
-    <div class="header">
-        <h1><?= $pagename ?></h1>
+    <div class="container" class="<?= $page ?>">
+        <div class="header">
+            <h1><?= $pagename ?></h1>
 <?php
 
 // I navigation.php ligger allt som har med navigationen att göra
@@ -22,5 +23,5 @@
 require_once("navigation.php");
 
 ?>
-    </div>
-    <div class="content">
+        </div>
+        <div class="content">
