@@ -1,13 +1,11 @@
 var header = function() {
-    var header  = $(".header");
-    var content = $(".content");
+    var body    = $("body");
+    var header  = $(".header", body);
 
     $("a", header).each(function() {
-        click.trigger = $(this);
-        click.action  = Array(
-            load.execute( content ),
-            active.execute()
-        );
-        click.get();
-    })
+        var trigger = $(this);
+        var target  = $(".content", body);
+
+        mainNav.create( trigger, target );
+    });
 }

@@ -1,11 +1,10 @@
 // Initiate events
-var newActions  = new actions;
+var newEvents   = new events;
 var newFunction = new functions;
 
 // Initiate actions
-var click = new newActions.click;
+var click = new newEvents.click;
+var load  = new newEvents.load;
 
 // Initiate functions
-var fade = new newFunction.fade;
-var load = new newFunction.load;
-var active = new newFunction.active;
+var mainNav = new newFunction.mainNav;

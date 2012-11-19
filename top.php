@@ -5,15 +5,15 @@
     <title><?= $pagename ?></title>
     <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8" />
     <script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/actions.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/events.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/functions.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/initiate.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/header.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/main.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/init.js"></script>
 </head>
-<body>
-    <div class="container" class="<?= $page ?>">
+<body class="<?= $page ?>">
+    <div class="container">
         <div class="header">
             <h1><?= $pagename ?></h1>
 <?php
