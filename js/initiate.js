@@ -8,3 +8,4 @@ var load  = new newEvents.load;
 
 // Initiate functions
 var mainNav = new newFunction.mainNav;
+var slideNav = new newFunction.slideNav;

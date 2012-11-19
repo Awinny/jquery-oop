@@ -40,6 +40,27 @@ div.header { margin-bottom: 10px }
             border-radius: 3px;
         }
 
+/* Slide navigation */
+.slide-nav { position: relative; }
+    .slide-nav > .active {
+        background-color: #000;
+        color: #fff;
+        border-radius: 3px;
+        position: absolute;
+        display: block;
+        height: 26px;
+        top: 0;
+    }
+    .slide-nav #navigation {
+        position: relative;
+        z-index: 1;
+    }
+        .slide-nav #navigation li.active a {
+            background-color: transparent;
+            color: #fff;
+            border-radius: 3px;
+        }
+
 /* Page */
 .container {
     margin: 10px;
